@@ -126,7 +126,7 @@ password - obrigatório.
 Logar na API\
 Campos:\
 name - obrigatório;\
-emaiil - obrigatório.\
+email - obrigatório.\
 \
 /refresh - POST\
 Gerar um novo token quando o mesmo expirar\
