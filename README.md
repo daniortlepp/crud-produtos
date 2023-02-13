@@ -1,4 +1,4 @@
-# crud-produ6tos
+# crud-produtos
 CRUD de produtos e autenticação em PHP com Laravel\
 \
 Siga as instruções abaixo para acessar a API.\
@@ -157,8 +157,7 @@ Consulta os dados de um produto pelo id\
 Edição de um produto\
 \
 /product/{id} - DELETE\
-Exclusão de um produto\
-\
+Exclusão de um produto
 
 ## Parâmetros do header
 
