@@ -22,7 +22,7 @@ composer update
 
 Crie um arquivo .env com a seguinte configuração (lembrando de alterar o DB_USERNAME e DB_PASSWORD conforme usuário e senha do seu MySQL):
 ```sh
-APP_NAME="CRUD Clientes"
+APP_NAME="CRUD Produtos"
 APP_ENV=local
 APP_KEY=base64:SY4C5hF/x2uNR04ob3cfJQvcCrbFyUgjCOwdK8WITqs=
 APP_DEBUG=true
