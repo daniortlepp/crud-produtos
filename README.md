@@ -109,34 +109,34 @@ E agora a API está pronta para você poder acessar através da URL http://local
 
 ## Como funciona
 
-Para conseguir utlizar a API, você deve primeiro se cadastrar. Será gerado um token que deve ser passado e todas as requisições que fizer a seguir.\
+Para conseguir utlizar a API, você deve primeiro se cadastrar. Será gerado um token que deve ser passado nas requisições que fizer a seguir, com exceção dos endpoints register e login.\
 \
 A API crud-produtos possui os seguintes endpoints:\
 \
 Autenticação:\
 \
-/register - POST\
+/api/register - POST\
 Cadastro de um novo usuário\
 Campos:\
 name - obrigatório;\
 email - obrigatório;\
 password - obrigatório.
 
-/login - POST\
+/api/login - POST\
 Logar na API\
 Campos:\
 name - obrigatório;\
 email - obrigatório.\
 \
-/refresh - POST\
+/api/refresh - POST\
 Gerar um novo token quando o mesmo expirar\
 \
-/logout - POST\
+/api/logout - POST\
 Fazer logout na API\
 \
 Produtos:\
 \
-/product - POST\
+/api/product - POST\
 Cadastro de um novo produto\
 Campos:\
 name - obrigatório;\
@@ -144,22 +144,22 @@ description - obrigatório;\
 value - obrigatório;\
 active - obrigatório.\
 \
-/product - GET\
+/api/product - GET\
 Listar todos os produtos cadastrados\
 \
-/product?search=palavra - GET\
+/api/product?search=palavra - GET\
 Listar os produtos cadastrados conforme a palavra enviada na busca\
 \
-/product/{id} - GET\
+/api/product/{id} - GET\
 Consulta os dados de um produto pelo id\
 \
-/product/{id} - PUT\
+/api/product/{id} - PUT\
 Edição de um produto\
 \
-/product/{id} - DELETE\
+/api/product/{id} - DELETE\
 Exclusão de um produto
 
 ## Parâmetros do header
 
-Authorization - recebe o valor do token gerado\
+Authorization - recebe o valor do token gerado (Bearer token)\
 Accept - application/json
